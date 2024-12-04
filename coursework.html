@@ -3,36 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coursework & Resume</title>
+    <title>Edwin Jiang - Resume</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            box-sizing: border-box;
         }
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            display: flex;
-            gap: 20px;
-        }
-        .section {
-            flex: 1;
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        .back-link {
-            display: block;
-            text-align: center;
-            margin-top: 20px;
-            text-decoration: none;
-            color: #333;
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
         }
         .background {
             background-image: url('images/concert.png');
@@ -40,110 +21,155 @@
             background-position: center;
             height: 100vh;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
-            position: relative;
+            padding: 20px;
+        }
+        .content {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            width: 100%;
+            max-width: 1000px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+            padding: 30px;
+            max-height: 90vh;
+            overflow: hidden;
+        }
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            overflow-y: auto;
+            padding-right: 10px;
+        }
+        h1, h2, h3 {
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style-position: inside;
+            padding-left: 10px;
+        }
+        .back-link {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            text-decoration: none;
+            color: white;
+            background-color: rgba(0,0,0,0.5);
+            padding: 10px 15px;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
     <div class="background">
-        <div class="container">
-            <div class="section" id="coursework">
-                <h1>Coursework</h1>
-                <p>Currently taking:</p>
-                <ul>
-                    <li>Discrete CS</li>
-                    <li>Linear Algebra</li>
-                    <li>Intro to Object-Oriented Programming</li>
-                    <li>Intro to Computational Media</li>
-                </ul>
-                <p>Previous coursework:</p>
-                <ul>
-                    <li>Calculus I & II</li>
-                    <li>Chemistry I</li>
-                    <li>Physics I</li>
-                    <li>Intro to CS</li>
-                </ul>
-
-                <h2>Favorite Books</h2>
-                <ul>
-                    <li>Ulysses by James Joyce</li>
-                    <li>Gravity's Rainbow and V. by Thomas Pynchon</li>
-                    <li>Infinite Jest and The Pale King by David Foster Wallace</li>
-                </ul>
+        <a href="index.html" class="back-link">Back to Home</a>
+        <div class="content">
+            <div class="left-column">
+                <div>
+                    <h2>Coursework</h2>
+                    <h3>Currently Taking</h3>
+                    <ul>
+                        <li>Discrete CS</li>
+                        <li>Linear Algebra</li>
+                        <li>Intro to Object-Oriented Programming</li>
+                        <li>Intro to Computational Media</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Previous Coursework</h3>
+                    <ul>
+                        <li>Calculus I & II</li>
+                        <li>Chemistry I</li>
+                        <li>Physics I</li>
+                        <li>Intro to CS</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Favorite Books</h2>
+                    <ul>
+                        <li>Ulysses by James Joyce</li>
+                        <li>Gravity's Rainbow and V. by Thomas Pynchon</li>
+                        <li>Infinite Jest and The Pale King by David Foster Wallace</li>
+                    </ul>
+                </div>
             </div>
-            <div class="section" id="resume">
-                <h1>Resume</h1>
-                <h2>Education</h2>
-                <h3>Georgia Institute of Technology</h3>
-                <p>Computational Media Major - Atlanta, Georgia</p>
-                <p>August 2024 - Present</p>
+            <div class="right-column">
+                <div>
+                    <h2>Education</h2>
+                    <h3>Georgia Institute of Technology</h3>
+                    <p>Computational Media Major - Atlanta, Georgia</p>
+                    <p>August 2024 - Present</p>
 
-                <h3>Montgomery College</h3>
-                <p>Aerospace Engineering Major - Rockville, Maryland</p>
-                <p>July 2023 – May 2024</p>
-                <ul>
-                    <li>GPA: 4.0</li>
-                    <li>Fall 2023 Dean's List</li>
-                </ul>
+                    <h3>Montgomery College</h3>
+                    <p>Aerospace Engineering Major - Rockville, Maryland</p>
+                    <p>July 2023 – May 2024</p>
+                    <ul>
+                        <li>GPA: 4.0</li>
+                        <li>Fall 2023 Dean's List</li>
+                    </ul>
+                </div>
 
-                <h2>Work Experience</h2>
-                <h3>WorldShine Adult Medical Daycare Center</h3>
-                <p>Paid Intern - Germantown, Maryland</p>
-                <p>December 2023 – January 2024</p>
-                <ul>
-                    <li>Created official social worker forms to evaluate the well-being and health of foreign senior citizens</li>
-                    <li>Created and handled an online database for social worker files</li>
-                </ul>
+                <div>
+                    <h2>Work Experience</h2>
+                    <h3>WorldShine Adult Medical Daycare Center</h3>
+                    <p>Paid Intern - Germantown, Maryland</p>
+                    <p>December 2023 – January 2024</p>
+                    <ul>
+                        <li>Created official social worker forms to evaluate the well-being and health of foreign senior citizens</li>
+                        <li>Created and handled an online database for social worker files</li>
+                    </ul>
 
-                <h3>Button Farm Living History Center</h3>
-                <p>Paid Intern - Collections Leader - Rockville, Maryland</p>
-                <p>June 2023 – July 2023</p>
-                <ul>
-                    <li>Installed PastPerfect, created a PastPerfect database</li>
-                    <li>Handled, cataloged and archived several documents, pictures, and historical objects</li>
-                    <li>Re-hired in March 2023 to mass-upgrade computer systems</li>
-                </ul>
+                    <h3>Button Farm Living History Center</h3>
+                    <p>Paid Intern - Collections Leader - Rockville, Maryland</p>
+                    <p>June 2023 – July 2023</p>
+                    <ul>
+                        <li>Installed PastPerfect, created a PastPerfect database</li>
+                        <li>Handled, cataloged and archived several documents, pictures, and historical objects</li>
+                        <li>Re-hired in March 2023 to mass-upgrade computer systems</li>
+                    </ul>
+                </div>
 
-                <h2>Leadership & Activities</h2>
-                <h3>Georgia Tech Musician's Network</h3>
-                <p>Sound Boy (August 2024 – Present)</p>
-                <ul>
-                    <li>Mixing and stagehand duties for studio performances, concerts and live performances</li>
-                    <li>Gaining proficiency in soldering, engineering live audio, fixing sound equipment, managing electrical generators</li>
-                </ul>
+                <div>
+                    <h2>Leadership & Activities</h2>
+                    <h3>Georgia Tech Musician's Network</h3>
+                    <p>Sound Boy (August 2024 – Present)</p>
+                    <ul>
+                        <li>Mixing and stagehand duties for studio performances, concerts and live performances</li>
+                        <li>Gaining proficiency in soldering, engineering live audio, fixing sound equipment, managing electrical generators</li>
+                    </ul>
 
-                <h3>Georgia Tech Video Game Development Club</h3>
-                <p>Audio and Narrative Sublead (August 2024 – Present)</p>
-                <ul>
-                    <li>Composing score for "Shiftscape"</li>
-                    <li>Developing narrative and worldbuilding for "Shiftscape"</li>
-                </ul>
+                    <h3>Georgia Tech Video Game Development Club</h3>
+                    <p>Audio and Narrative Sublead (August 2024 – Present)</p>
+                    <ul>
+                        <li>Composing score for "Shiftscape"</li>
+                        <li>Developing narrative and worldbuilding for "Shiftscape"</li>
+                    </ul>
 
-                <h3>REM Worship Band</h3>
-                <p>Pianist, Guitarist, Sound Technician (Dec 2022 – August 2024)</p>
-                <ul>
-                    <li>Attended weekly practice and performance as a core member of one of the Worship Band teams for REM church</li>
-                    <li>Duties include piano, acoustic guitar, electric guitar, and sound technician</li>
-                </ul>
+                    <h3>REM Worship Band</h3>
+                    <p>Pianist, Guitarist, Sound Technician (Dec 2022 – August 2024)</p>
+                    <ul>
+                        <li>Attended weekly practice and performance as a core member of one of the Worship Band teams for REM church</li>
+                        <li>Duties include piano, acoustic guitar, electric guitar, and sound technician</li>
+                    </ul>
+                </div>
 
-                <h2>Skills</h2>
-                <ul>
-                    <li>Proficient in Reaper and working with MIDI controls, as well as analog instrumentation and composition.</li>
-                    <li>Proficient in C++, HTML, Javascript and Java.</li>
-                </ul>
-
-                <h2>Additional Skills and Interests</h2>
-                <ul>
-                    <li>Languages: Fluent in English and Mandarin. Literate in French</li>
-                    <li>Arts: Intermediate Guitarist and Pianist</li>
-                    <li>Interests: Reading, App & Game Development, Guitar, Music Theory & Production, Live Musicianship</li>
-                </ul>
+                <div>
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>Proficient in Reaper and working with MIDI controls, as well as analog instrumentation and composition.</li>
+                        <li>Proficient in C++, HTML, Javascript and Java.</li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <a href="index.html" class="back-link">Back to Home</a>
     </div>
 </body>
 </html>
