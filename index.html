@@ -18,66 +18,55 @@
             background-position: center;
             height: 100vh;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            position: relative;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 20px;
+        }
+        .sidebar {
+            width: 200px;
+            padding: 20px;
+            background-color: #cce7ff;
+            border-right: 2px solid #005f99;
+            margin-right: 20px;
         }
         .content-box {
-            background-color: rgba(240, 255, 255, 0.85);
-            padding: 40px;
-            border-radius: 15px;
-            max-width: 650px;
-            width: 85%;
-            text-align: center;
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-            margin-bottom: 30px;
-            font-size: 1.2em;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
+            background-color: #f0f8ff;
+            padding: 20px;
+            width: calc(100% - 240px);
+            font-size: 1em;
+            text-align: left;
         }
         .nav-link {
+            display: block;
+            margin-bottom: 10px;
             text-decoration: none;
-            color: #ffffff;
-            background-color: #007acc;
-            padding: 12px 24px;
-            border-radius: 10px;
+            color: #005f99;
             font-weight: bold;
-            transition: background-color 0.3s ease, transform 0.3s ease;
         }
         .nav-link:hover {
-            background-color: #005f99;
-            transform: scale(1.05);
+            text-decoration: underline;
         }
         .sabitsuki-link {
+            display: block;
             background-color: #ff69b4;
             color: #ffffff;
-            font-weight: bold;
-            padding: 12px 24px;
-            border-radius: 10px;
+            padding: 10px;
             text-decoration: none;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-        .sabitsuki-link:hover {
-            background-color: #ff1493;
-            transform: scale(1.1);
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <div class="background">
-        <div class="content-box">
-            <h1>Welcome to the Weird and Wonderful World of Edwin Jiang</h1>
-            <p>I'm Edwin, a Computational Media major at Georgia Tech. Dive in, click around, stay a while.</p>
-        </div>
-        <div class="nav-links">
+        <div class="sidebar">
             <a href="portfolio.html" class="nav-link">Portfolio</a>
             <a href="coursework.html" class="nav-link">Coursework & Resume</a>
             <a href="contact.html" class="nav-link">Contact</a>
             <a href="sabitsuki.html" class="sabitsuki-link">Sabitsuki</a>
+        </div>
+        <div class="content-box">
+            <h1>Welcome to the Weird and Wonderful World of Edwin Jiang</h1>
+            <p>I'm Edwin, a Computational Media major at Georgia Tech. Dive in, click around, stay a while.</p>
         </div>
     </div>
 </body>
