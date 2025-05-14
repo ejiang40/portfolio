@@ -11,11 +11,11 @@ async function loadBlogPosts() {
         let olderHTML = '';
 
         posts.slice(0, 2).forEach((post, index) => {
-            recentHTML += `<a href="blog.html?post=${index}" class="blog-link">${post.title} (${post.date})</a>`;
+            recentHTML += `<a href="blog.html?post=${index}" class="blog-link">${post.title} (${post.date})</a><br>`;
         });
 
         posts.slice(2).forEach((post, index) => {
-            olderHTML += `<a href="blog.html?post=${index+2}" class="blog-link">${post.title} (${post.date})</a>`;
+            olderHTML += `<a href="blog.html?post=${index+2}" class="blog-link">${post.title} (${post.date})</a><br>`;
         });
 
         if (recentPosts) recentPosts.innerHTML = recentHTML;
