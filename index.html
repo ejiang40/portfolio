@@ -17,7 +17,7 @@
             background-image: url('images/background.png');
             background-size: cover;
             background-position: center;
-            height: calc(100vh - 120px);
+            height: 100vh;
             display: flex;
             flex-direction: row;
             align-items: flex-start;
@@ -44,11 +44,12 @@
             width: calc(100% - 480px);
             font-size: 1em;
             text-align: left;
+            margin-bottom: 10px;
         }
 
         .lastfm-box {
             position: absolute;
-            bottom: 140px;
+            bottom: 20px;
             right: 20px;
             width: 250px;
             background-color: #d51007;
@@ -67,34 +68,29 @@
         }
 
         .lucky-images-pane {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 120px;
             background-color: #333333;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
+            width: calc(100% - 480px);
             padding: 10px;
             box-sizing: border-box;
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
         }
 
         .lucky-images-pane img {
-            width: calc((100% - 70px) / 6);
+            width: calc((100% - 50px) / 6);
             height: 100px;
             object-fit: cover;
             border-radius: 5px;
         }
 
         .lucky-images-label {
-            position: absolute;
-            bottom: 5px;
-            width: 100%;
             text-align: center;
             font-size: 1em;
             color: #ffffff;
+            margin-top: 5px;
         }
     </style>
 </head>
@@ -109,15 +105,32 @@
             <h3>Older Posts</h3>
             <div id="older-posts"></div>
         </div>
-        <div class="content-box">
-            <h1>Welcome to the website</h1>
-            <p>I'm Edwin, a Georgia Tech Junior doing Computational Media at Georgia Tech.</p>
-            <p>I also make music under the name sabitsuki.</p>
-            <p>This is my personal website. I blog every now and then, and you can see what I'm listening to on spotify at the bottom right.</p>
-            <p>My personal projects and past working experience are available to see on the left!</p>
-            <p>In my free time, I read, write, listen to music, practice guitar, play SSBM, produce sabitsuki, design games and apps, and watch anime.</p>
-            <p>If you wanna talk to me casually, get at me on discord @ hub.0</p>
+
+        <div>
+            <div class="content-box">
+                <h1>Hello hello</h1>
+                <p>I'm Edwin, a Georgia Tech Junior doing Computational Media at Georgia Tech.</p>
+                <p>I also make music under the name sabitsuki.</p>
+                <p>This is my personal website. I blog every now and then, and you can see what I'm listening to on spotify at the bottom right.</p>
+                <p>My personal projects and past working experience are available to see on the left!</p>
+                <p>In my free time, I read, write, listen to music, practice guitar, play SSBM, produce sabitsuki, design games and apps, and watch anime.</p>
+                <p>If you wanna talk to me casually, get at me on discord @ hub.0</p>
+            </div>
+
+            <div class="lucky-images-pane">
+                <img src="images/lucky1.png" alt="Lucky Image 1">
+                <img src="images/lucky2.png" alt="Lucky Image 2">
+                <img src="images/lucky3.png" alt="Lucky Image 3">
+                <img src="images/lucky4.png" alt="Lucky Image 4">
+                <img src="images/lucky5.png" alt="Lucky Image 5">
+                <img src="images/lucky6.png" alt="Lucky Image 6">
+            </div>
+
+            <div class="lucky-images-label">
+                Six Lucky Images
+            </div>
         </div>
+
         <div class="blog-sidebar">
             <h3>Recent Posts</h3>
             <div id="recent-posts"></div>
@@ -126,19 +139,6 @@
         <div class="lastfm-box" id="lastfm-box">
             Loading current track...
         </div>
-    </div>
-
-    <div class="lucky-images-pane">
-        <img src="images/lucky1.png" alt="Lucky Image 1">
-        <img src="images/lucky2.png" alt="Lucky Image 2">
-        <img src="images/lucky3.png" alt="Lucky Image 3">
-        <img src="images/lucky4.png" alt="Lucky Image 4">
-        <img src="images/lucky5.png" alt="Lucky Image 5">
-        <img src="images/lucky6.png" alt="Lucky Image 6">
-    </div>
-
-    <div class="lucky-images-label">
-        Six Lucky Images
     </div>
 
     <script src="js/blog.js"></script>
