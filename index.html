@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edwin Jiang</title>
+    <title>Edwin Jiang - Welcome to My World</title>
     <style>
         body, html {
             margin: 0;
             padding: 0;
             height: 100%;
-            font-family: Arial, sans-serif;
+            font-family: 'Verdana', sans-serif;
+            background-color: #b0e0e6;
         }
         .background {
             background-image: url('images/background.png');
@@ -23,42 +24,60 @@
             position: relative;
         }
         .content-box {
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 30px;
-            border-radius: 10px;
-            max-width: 600px;
-            width: 80%;
+            background-color: rgba(240, 255, 255, 0.85);
+            padding: 40px;
+            border-radius: 15px;
+            max-width: 650px;
+            width: 85%;
             text-align: center;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
             margin-bottom: 30px;
+            font-size: 1.2em;
         }
         .nav-links {
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 15px;
         }
         .nav-link {
             text-decoration: none;
-            color: white;
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 10px 20px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
+            color: #ffffff;
+            background-color: #007acc;
+            padding: 12px 24px;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
         .nav-link:hover {
-            background-color: rgba(0, 0, 0, 0.9);
+            background-color: #005f99;
+            transform: scale(1.05);
+        }
+        .sabitsuki-link {
+            background-color: #ff69b4;
+            color: #ffffff;
+            font-weight: bold;
+            padding: 12px 24px;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .sabitsuki-link:hover {
+            background-color: #ff1493;
+            transform: scale(1.1);
         }
     </style>
 </head>
 <body>
     <div class="background">
         <div class="content-box">
-            <h1>Edwin Jiang's Portfolio Website</h1>
-            <p>I'm Edwin, a Computational Media major at Georgia Tech. Check out my work and contact me for inquiries.</p>
+            <h1>Welcome to the Weird and Wonderful World of Edwin Jiang</h1>
+            <p>I'm Edwin, a Computational Media major at Georgia Tech. Dive in, click around, stay a while.</p>
         </div>
         <div class="nav-links">
             <a href="portfolio.html" class="nav-link">Portfolio</a>
             <a href="coursework.html" class="nav-link">Coursework & Resume</a>
             <a href="contact.html" class="nav-link">Contact</a>
+            <a href="sabitsuki.html" class="sabitsuki-link">Sabitsuki</a>
         </div>
     </div>
 </body>
