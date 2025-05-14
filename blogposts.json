@@ -1,12 +1,19 @@
 [
     {
-        "title": "First Blog Post",
+        "title": "Test",
         "date": "2025-05-13",
-        "content": "This is the content of my first blog post."
+        "content": "Just testing the blog feature."
     },
     {
-        "title": "Second Blog Post",
+        "title": "Second test",
         "date": "2025-05-14",
-        "content": "Here I share some thoughts about my project."
+        "content": "This wasn't actually a test."
+    },
+    {
+        "title": "Some random thoughts",
+        "date": "2025-05-14",
+        "content": "My writing is pretty darn clunky. I used to think that reading a lot would make me a smooth, easy writer, but I realized a long time ago that isn't necessarily true. What is it? How 
+        can I learn to express myself better? Not better as in I get more of my soul out there, better as in literally easier and more fun to read. It affects me worst when I try to talk about something
+        I like. So I guess, to train, I'll list off and explain my favorite things."
     }
 ]
