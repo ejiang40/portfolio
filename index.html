@@ -40,23 +40,23 @@
             font-size: 1em;
             text-align: left;
         }
-        .nav-link, .blog-link {
-            display: block;
-            margin-bottom: 10px;
-            text-decoration: none;
-            color: #005f99;
-            font-weight: bold;
-        }
-        .nav-link:hover, .blog-link:hover {
-            text-decoration: underline;
-        }
-        .sabitsuki-link {
-            display: block;
-            background-color: #ff69b4;
+        .spotify-box {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            width: 250px;
+            background-color: #1db954;
             color: #ffffff;
             padding: 10px;
-            text-decoration: none;
-            margin-top: 20px;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+        .spotify-box img {
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+            margin-right: 10px;
+            vertical-align: middle;
         }
     </style>
 </head>
@@ -78,8 +78,13 @@
             <h3>Recent Posts</h3>
             <div id="recent-posts"></div>
         </div>
+
+        <div class="spotify-box" id="spotify-box">
+            <span>Loading current track...</span>
+        </div>
     </div>
+
     <script src="js/blog.js"></script>
+    <script src="js/spotify.js"></script>
 </body>
 </html>
-
