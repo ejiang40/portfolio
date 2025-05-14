@@ -22,28 +22,32 @@
             align-items: flex-start;
             padding: 20px;
         }
-        .sidebar {
+        .sidebar, .blog-sidebar {
             width: 200px;
             padding: 20px;
             background-color: #cce7ff;
             border-right: 2px solid #005f99;
             margin-right: 20px;
         }
+        .blog-sidebar {
+            margin-left: 20px;
+            border-left: 2px solid #005f99;
+        }
         .content-box {
             background-color: #f0f8ff;
             padding: 20px;
-            width: calc(100% - 240px);
+            width: calc(100% - 480px);
             font-size: 1em;
             text-align: left;
         }
-        .nav-link {
+        .nav-link, .blog-link {
             display: block;
             margin-bottom: 10px;
             text-decoration: none;
             color: #005f99;
             font-weight: bold;
         }
-        .nav-link:hover {
+        .nav-link:hover, .blog-link:hover {
             text-decoration: underline;
         }
         .sabitsuki-link {
@@ -63,11 +67,19 @@
             <a href="coursework.html" class="nav-link">Coursework & Resume</a>
             <a href="contact.html" class="nav-link">Contact</a>
             <a href="sabitsuki.html" class="sabitsuki-link">Sabitsuki</a>
+            <h3>Older Posts</h3>
+            <div id="older-posts"></div>
         </div>
         <div class="content-box">
             <h1>Welcome to the Weird and Wonderful World of Edwin Jiang</h1>
             <p>I'm Edwin, a Computational Media major at Georgia Tech. Dive in, click around, stay a while.</p>
         </div>
+        <div class="blog-sidebar">
+            <h3>Recent Posts</h3>
+            <div id="recent-posts"></div>
+        </div>
     </div>
+    <script src="js/blog.js"></script>
 </body>
 </html>
+
